@@ -5,7 +5,7 @@ function ThemeToggler() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <button onClick={toggleTheme}>
+    <button className="btn-theme-toggle" onClick={toggleTheme}>
       {theme === "light" ? "🌙 Escuro" : "☀️ Claro"}
     </button>
   );
