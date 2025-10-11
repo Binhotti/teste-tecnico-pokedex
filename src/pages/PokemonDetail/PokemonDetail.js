@@ -23,9 +23,6 @@ function PokemonDetail() {
             <Link to="/">Voltar</Link>
             <h1>{pokemon.name}</h1>
             <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-            <p>Height: {pokemon.height}</p>
-            <p>Weight: {pokemon.weight}</p>
-
             <h2>Tipo:</h2>
             <ul>
                 {pokemon.types.map((t) => (

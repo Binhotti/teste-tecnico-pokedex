@@ -12,9 +12,10 @@ export function ThemeContextProvider({ children }) {
     }
 
     const themeStyles = theme === 'light' ? lightTheme : darkTheme;
+    const themeStyle = themeStyles; 
 
     return (
-        <ThemeContext.Provider value={{ theme, toggleTheme, themeStyles }}>
+        <ThemeContext.Provider value={{ theme, toggleTheme, themeStyles, themeStyle }}>
             {children}
         </ThemeContext.Provider>
     );

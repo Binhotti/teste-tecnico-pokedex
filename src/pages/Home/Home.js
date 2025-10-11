@@ -1,4 +1,4 @@
-import React, { useState, useEffect, use } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PokemonCard from "../../components/PokemonCard/PokemonCard";
 import { useTheme } from "../../context/ThemeContext";
@@ -8,7 +8,8 @@ function Home() {
     const [pokemons, setPokemons] = useState([]);
     const [offset, setOffset] = useState(0);
     const { themeStyles } = useTheme();
-
+    
+    useEffect(() => {
     const fetchPokemons = async () => {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=10&offset=${offset}`);
 
@@ -24,7 +25,6 @@ function Home() {
         setPokemons((prev) => [...prev, ...pokemonDetails]);
     }
 
-    useEffect(() => {
         fetchPokemons();
     }, [offset]);
 
