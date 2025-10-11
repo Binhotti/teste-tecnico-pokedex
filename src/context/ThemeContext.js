@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext } from "react";
-import lightTheme from "../../styles/lightTheme"
-import darkTheme from "../../styles/darkTheme"
+import lightTheme from "../styles/lightTheme"
+import darkTheme from "../styles/darkTheme"
 
 const ThemeContext = createContext();
 
@@ -11,5 +11,15 @@ export function ThemeContextProvider({ children }) {
         setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
     }
 
-    const themeStyles = theme === 
+    const themeStyles = theme === 'light' ? lightTheme : darkTheme;
+
+    return (
+        <ThemeContext.Provider value={{ theme, toggleTheme, themeStyles }}>
+            {children}
+        </ThemeContext.Provider>
+    );
+}
+
+export function useTheme() {
+    return useContext(ThemeContext);
 }
