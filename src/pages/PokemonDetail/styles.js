@@ -13,7 +13,7 @@ export const Container = styled.div`
       ? 'linear-gradient(135deg, #2c3e50 0%, #34495e 100%)' 
       : 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
   };
-  font-family: 'Pixelify Sans', cursive;
+  font-family: 'Pixelify Sans';
 `;
 
 export const ThemeToggleContainer = styled.div`
