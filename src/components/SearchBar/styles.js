@@ -35,7 +35,7 @@ export const SearchInput = styled.input`
     theme === 'dark' ? '#ecf0f1' : '#343a40'
   };
   font-size: 1rem;
-  font-family: 'Pixelify Sans', cursive;
+  font-family: 'Pixelify Sans';
   font-weight: 500;
 
   &::placeholder {
