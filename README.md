@@ -2,10 +2,6 @@
 
 Uma aplicação web moderna e responsiva para explorar o universo Pokémon, desenvolvida em React para o teste técnico do DevQuest
 
-# 🎮 Pokédex - Teste Técnico
-
-Uma aplicação web moderna e responsiva para explorar o universo Pokémon, desenvolvida em React para o teste técnico do DevQuest
-
 ## 🎬 Preview da Aplicação
 
 ![Pokédex Demo](./demo-pokedex.gif)
