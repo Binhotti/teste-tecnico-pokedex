@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "./styles";
 
+
 function PokemonCard({ pokemon, onClick }) {
     return (
         <Card onClick={onClick} role="button" tabIndex={0}>

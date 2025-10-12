@@ -96,7 +96,7 @@ const GlobalStyles = createGlobalStyle`
     .btn-load-more {
         background: ${({ theme }) => theme.button.primary};
         color: ${({ theme }) => theme.button.text};
-        margin: 20px auto;
+        margin: 80px auto;
         display: block;
         padding: 15px 30px;
         font-size: 18px;

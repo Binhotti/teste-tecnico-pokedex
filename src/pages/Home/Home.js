@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PokemonCard from "../../components/PokemonCard/PokemonCard";
 import { useTheme } from "../../context/ThemeContext";
 import ThemeToggler from "../../components/ThemeToggler/ThemeToggler";
+import { Title } from "../../pages/PokemonDetail/styles";
 
 function Home() {
     const [pokemons, setPokemons] = useState([]);
@@ -23,7 +24,6 @@ function Home() {
             );
 
             setPokemons((prev) => {
-                // Evita duplicação verificando se o Pokémon já existe
                 const existingIds = prev.map(p => p.id);
                 const newPokemons = pokemonDetails.filter(p => !existingIds.includes(p.id));
                 return [...prev, ...newPokemons];
@@ -36,7 +36,7 @@ function Home() {
     return (
         <div style={{ background: themeStyles.background, color: themeStyles.text }}>
         <ThemeToggler />
-        <h1>Pokedex</h1>
+        <Title>Pokedex</Title>
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 20, justifyContent: 'center', padding: 20 }}>
             {pokemons.map((poke, index) => (
                 <Link

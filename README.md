@@ -1,70 +1,171 @@
-# Getting Started with Create React App
+# 🎮 Pokédex - Teste Técnico
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uma aplicação web moderna e responsiva para explorar o universo Pokémon, desenvolvida em React para o teste técnico do DevQuest
 
-## Available Scripts
+# 🎮 Pokédex - Teste Técnico
 
-In the project directory, you can run:
+Uma aplicação web moderna e responsiva para explorar o universo Pokémon, desenvolvida em React para o teste técnico do DevQuest
 
-### `npm start`
+## 🎬 Preview da Aplicação
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Pokédex Demo](./demo-pokedex.gif)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+*Aplicacao em funcionamento mostrando navegação entre páginas e alternância de temas*
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📋 Descrição do Projeto
 
-### `npm run build`
+A **Pokédex** é uma aplicação web interativa que permite aos usuários explorar, visualizar e obter informações detalhadas sobre diferentes Pokémon. O projeto foi desenvolvido como parte de um teste técnico, demonstrando habilidades em desenvolvimento frontend moderno com React.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A aplicação oferece uma experiência imersiva, incluindo cartas estilizadas, animações suaves e um sistema de temas claro/escuro.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✨ Funcionalidades Implementadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🏠 Página Principal (Home)
+- **Grid responsivo** de cartas Pokémon
+- **Carregamento dinâmico** de Pokémon via API
+- **Botão "Carregar mais"** para paginação
+- **Design responsivo** adaptável a diferentes telas
+- **Sistema de temas** claro e escuro
 
-### `npm run eject`
+### 🎴 Página de Detalhes do Pokémon
+- **Informações completas**: tipos, habilidades, estatísticas e movimentos
+- **Imagem oficial** do Pokémon com animação de flutuação
+- **Navegação** com botão voltar
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🔧 Funcionalidades Técnicas
+- **Gerenciamento de estado** com Context API
+- **Componentização** modular e reutilizável
+- **Estilização** com Styled Components
+- **Responsividade** para mobile e desktop
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Ferramentas Utilizadas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **React**
+- **Escolhido por**: Framework moderno, componentização eficiente e ecossistema robusto
+- **Benefícios**: Reutilização de componentes, gerenciamento de estado eficiente e performance otimizada
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### **Styled Components**
+- **Escolhido por**: Permite estilização dinâmica e temática
+- **Benefícios**: Componentes estilizados reutilizáveis, suporte a temas e melhor organização do CSS
 
-## Learn More
+### **React Router DOM**
+- **Escolhido por**: Roteamento eficiente e navegação SPA
+- **Benefícios**: Navegação sem reload, URLs amigáveis e experiência de usuário fluida
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### **PokéAPI**
+- **Escolhido por**: API gratuita, completa e bem documentada
+- **Benefícios**: Dados atualizados, endpoints RESTful e informações detalhadas dos Pokémon
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### **Create React App**
+- **Escolhido por**: Setup rápido e configuração otimizada
+- **Benefícios**: Hot reload, build otimizado e ambiente de desenvolvimento pronto
 
-### Code Splitting
+## 🎯 Decisões de Design e Arquitetura
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### **1. Estrutura de Componentes**
+```
 
-### Analyzing the Bundle Size
+# Componentes reutilizáveis
+# Páginas principais
+# Gerenciamento de estado global
+# Custom hooks
+# Configuração de rotas
+# Estilos globais e temas
+# Recursos estáticos
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Justificativa**: Organização modular que facilita manutenção e escalabilidade.
 
-### Making a Progressive Web App
+### **2. Styled Components vs CSS Modules**
+**Escolhido**: Styled Components
+**Justificativa**: 
+- Estilização dinâmica para temas
+- Componentes autocontidos
+- Melhor integração com React
+- Suporte nativo a props e temas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### **3. Context API vs Redux**
+**Escolhido**: Context API
+**Justificativa**:
+- Simplicidade para gerenciamento de tema
+- Menos boilerplate
+- Adequado para estado global simples
+- Performance satisfatória para este escopo
 
-### Advanced Configuration
+### **4. Design System**
+**Características**:
+- **Fonte**: Pixelify Sans (estilo retrô dos jogos)
+- **Cores**: Paleta baseada nos jogos originais
+- **Animações**: Suaves e responsivas
+- **Layout**: Grid responsivo e flexível
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Justificativa**: Criar uma experiência autêntica que remete aos jogos clássicos de Pokémon.
 
-### Deployment
+### **5. Estrutura de Dados**
+**Abordagem**: Fetch direto da API com Promise.all
+**Justificativa**: 
+- Simplicidade de implementação
+- Dados sempre atualizados
+- Menos complexidade de cache
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🚀 Como Executar o Projeto
 
-### `npm run build` fails to minify
+### **Pré-requisitos**
+- Node.js (versão 16 ou superior)
+- npm ou yarn
+- Git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### **Passo a Passo**
+
+1. **Clone o repositório**
+```bash
+git clone <url-do-repositorio>
+cd teste-tecnico-pokedex
+```
+
+2. **Instale as dependências**
+```bash
+npm install
+# ou
+yarn install
+```
+
+3. **Execute o projeto em modo desenvolvimento**
+```bash
+npm start
+# ou
+yarn start
+```
+
+4. **Acesse a aplicação**
+```
+Abra http://localhost:3000 no seu navegador
+```
+
+## 🎨 Temas
+
+### **Tema Claro**
+- Fundo: Gradiente azul/roxo
+- Cards: Branco com sombras suaves
+- Texto: Cinza escuro
+
+### **Tema Escuro**
+- Fundo: Gradiente cinza escuro
+- Cards: Cinza escuro com bordas
+- Texto: Branco/cinza claro
+
+## 🔗 Links Úteis
+
+- [PokéAPI Documentation](https://pokeapi.co/docs/v2)
+- [React Documentation](https://react.dev/)
+- [Styled Components](https://styled-components.com/)
+- [React Router](https://reactrouter.com/)
+
+## 📄 Licença
+
+Este projeto foi desenvolvido como parte de um teste técnico e é destinado apenas para fins de avaliação.
+
+---
+
+**Desenvolvido por Vitor Binhotti ❤️**
