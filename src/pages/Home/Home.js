@@ -8,7 +8,7 @@ import { Title } from "../../pages/PokemonDetail/styles";
 
 function Home() {
     const [pokemons, setPokemons] = useState([]);
-    const [allPokemonNames, setAllPokemonNames] = useState([]); // nova lista com todos os nomes
+    const [allPokemonNames, setAllPokemonNames] = useState([]); 
     const [offset, setOffset] = useState(0);
     const [searchTerm, setSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState([]);
