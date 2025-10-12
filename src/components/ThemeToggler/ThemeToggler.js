@@ -6,7 +6,7 @@ function ThemeToggler() {
 
   return (
     <button className="btn-theme-toggle" onClick={toggleTheme}>
-      {theme === "light" ? "🌙 Escuro" : "☀️ Claro"}
+      {theme === "light" ? "🌙" : "🌞"}
     </button>
   );
 }
